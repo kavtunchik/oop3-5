@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" spacing="30.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.bsuir.controllers.MainController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <Menu mnemonicParsing="false" text="Load">
+                    <items>
+                        <MenuItem fx:id="loadBinaryMenuItem" mnemonicParsing="false" text="Binary" />
+                        <MenuItem fx:id="loadXmlMenuItem" mnemonicParsing="false" text="XML" />
+                      <MenuItem fx:id="loadTextMenuItem" mnemonicParsing="false" text="Text" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Save">
+                    <items>
+                        <MenuItem fx:id="saveBinaryMenuItem" mnemonicParsing="false" text="Binary" />
+                        <MenuItem fx:id="saveXmlMenuItem" mnemonicParsing="false" text="XML" />
+                      <MenuItem fx:id="saveTextMenuItem" mnemonicParsing="false" text="Text" />
+                    </items>
+                  </Menu>
+                  <MenuItem fx:id="loadPluginMenuItem" mnemonicParsing="false" text="Load plugin" />
+                  <MenuItem fx:id="removePluginMenuItem" mnemonicParsing="false" text="Remove plugin" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+                  <Menu mnemonicParsing="false" text="Add">
+                    <items>
+                      <MenuItem fx:id="addFoodMenuItem" mnemonicParsing="false" text="Food" />
+                        <MenuItem fx:id="addMeatProductMenuItem" mnemonicParsing="false" text="Meat product" />
+                        <MenuItem fx:id="addSausageMenuItem" mnemonicParsing="false" text="Sausage" />
+                        <MenuItem fx:id="addMeatMenuItem" mnemonicParsing="false" text="Meat" />
+                        <MenuItem fx:id="addMilkshakeMenuItem" mnemonicParsing="false" text="Milkshake" />
+                        <MenuItem fx:id="addMilkMenuItem" mnemonicParsing="false" text="Milk" />
+                    </items>
+                  </Menu>
+              <MenuItem fx:id="deleteMenuItem" mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ListView fx:id="foodListView" VBox.vgrow="ALWAYS" />
+   </children>
+</VBox>
